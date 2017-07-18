@@ -1,5 +1,5 @@
 # assinando-app-cordova
-Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para subir na PlayStore
+Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para fazer upload na PlayStore
 
 ## Como utilizar
 
