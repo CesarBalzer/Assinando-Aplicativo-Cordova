@@ -119,6 +119,10 @@ Tutorial de criação e asssinatura de um aplicativo feito com Apache Cordova pa
 
     cordova build android --release --buildConfig
 
+ou
+    
+    cordova build android --debug --buildConfig
+    
 Para mais informações de como configurar a assinatura do app [Assinando um aplicativo](http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#signing-an-app)
 
 
