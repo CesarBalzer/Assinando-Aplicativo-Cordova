@@ -84,7 +84,7 @@ Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para faz
     /seu-caminho-para-o-zipalign/zipalign -v 4 /seu-caminho-para-o-apk-nao-assinado/android-release-unsigned.apk /seu-caminho-de-saida-para-o-apk-assinado/appassinado.apk
 
 
-##Opcional:
+## Opcional:
 
 ### Podemos especificar um build.json com o armazenamento das chaves
 
