@@ -73,21 +73,50 @@ Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para faz
 
 ### No exemplo que utilizamos ficaria assim:
 
-    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore /seu-caminho-para-o/appassinado.keystore /seu-caminho-para-o-apk-nao-assinado/android-release-unsigned.apk appassinado
+    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore appassinado.keystore platforms/android/build/outputs/apk/android-release-unsigned.apk appassinado
  
 ### Vai pedir a senha da assinatura:
 
     Enter KeyPhrase as 'xxxxxxxx'
  
-### Finalmente vamos gerar o apk para subir na playstore utilizando a ferramenta zipalign do seu sdk:
+### Finalmente vamos gerar o apk assinado utilizando a ferramenta zipalign do seu sdk:
  
-    /seu-caminho-para-o-zpalign/zipalign -v 4 /seu-caminho-para-o-apk-nao-assinado/android-release-unsigned.apk /seu-caminho-de-saida-para-o-apk-assinado/appassinado.apk
+    /seu-caminho-para-o-zipalign/zipalign -v 4 /seu-caminho-para-o-apk-nao-assinado/android-release-unsigned.apk /seu-caminho-de-saida-para-o-apk-assinado/appassinado.apk
 
-Agora você já poderá fazer o upload do apk na PlayStore!!!
+
+##Opcional:
+
+### Podemos especificar um build.json com o armazenamento das chaves
+
+> Alternativamente, você pode especificá-los em um arquivo de configuração de compilação (build.json) Usando o argumento --buildConfig para os mesmos comandos. Aqui está um exemplo de um arquivo de configuração de compilação:
+
+```javascript
+{
+    "android": {
+        "debug": {
+            "keystore": "/Users/balzer/www/Keystores/presstrip.keystore",
+            "storePassword": "!@#$%^&*()",
+            "alias": "presstrip",
+            "password": "!@#$%^&*()",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "/Users/balzer/www/Keystores/presstrip.keystore",
+            "storePassword": "!@#$%^&*()",
+            "alias": "presstrip",
+            "password": "!@#$%^&*()",
+            "keystoreType": ""
+        }
+    }
+}
+
+```
 
 
 
 ## Mais Informações
+
+Para mais informações de como configurar a assinatura do app [Assinando um aplicativo](http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#signing-an-app)
 
 Para mais informações de como configurar o Apache Cordova acesse a documentação [Documentação Apache Cordova](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
 
