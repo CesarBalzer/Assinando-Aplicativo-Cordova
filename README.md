@@ -88,7 +88,7 @@ Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para faz
 
 ### Podemos especificar um build.json com o armazenamento das chaves
 
-> Alternativamente, você pode especificá-los em um arquivo de configuração de compilação (build.json) Usando o argumento --buildConfig para os mesmos comandos. Aqui está um exemplo de um arquivo de configuração de compilação:
+> Alternativamente, você pode especificá-los em um arquivo de configuração de compilação (build.json) Usando o argumento --buildConfig para os mesmos comandos. Aqui está um exemplo de um arquivo de configuração que deve ser adicionado em seu projeto, eu particularmente adicionei dentro da minha pasta js.
 
 ```javascript
 {
