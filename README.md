@@ -90,27 +90,7 @@ Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para faz
 
 > Alternativamente, você pode especificá-los em um arquivo de configuração de compilação (build.json) Usando o argumento --buildConfig para os mesmos comandos. Aqui está um exemplo de um arquivo de configuração que deve ser adicionado em seu projeto, eu particularmente adicionei dentro da minha pasta js.
 
-```javascript
-{
-    "android": {
-        "debug": {
-            "keystore": "/Users/balzer/www/Keystores/presstrip.keystore",
-            "storePassword": "!@#$%^&*()",
-            "alias": "presstrip",
-            "password": "!@#$%^&*()",
-            "keystoreType": ""
-        },
-        "release": {
-            "keystore": "/Users/balzer/www/Keystores/presstrip.keystore",
-            "storePassword": "!@#$%^&*()",
-            "alias": "presstrip",
-            "password": "!@#$%^&*()",
-            "keystoreType": ""
-        }
-    }
-}
 
-```
 
 
 
