@@ -39,7 +39,7 @@ Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para sub
     What is the name of your State or Province? :  xxxxx
     What is the two-letter country code for this unit? :  xxx
 
-### Exemplo da saída quando gerada a chave
+### Exemplo da saída quando gerada a chave (Usando as informações que foram requisitadas acima)
 
     Informe a senha da área de armazenamento de chaves: xxxxxxxxx 
     Informe novamente a nova senha: xxxxxxxxx
