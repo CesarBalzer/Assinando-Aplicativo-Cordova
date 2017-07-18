@@ -1,4 +1,4 @@
-# assinando-app-cordova
+# Assinando Aplicativo com Apache Cordova
 Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para fazer upload na PlayStore
 
 ## Como utilizar
@@ -125,5 +125,4 @@ Para mais informações de como configurar a assinatura do app [Assinando um apl
 
 Para mais informações de como configurar o Apache Cordova acesse a documentação [Documentação Apache Cordova](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
 
-Para mais informações dos plugins acesse [Guia de desenvolvimento de plugins](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html)
 
