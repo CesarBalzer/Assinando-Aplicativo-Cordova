@@ -1,5 +1,5 @@
 # assinando-app-cordova
-Criando um aplicativo com Apache Cordova e assinando para subir na PlayStore
+Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para subir na PlayStore
 
 ## Como utilizar
 
@@ -17,7 +17,7 @@ Criando um aplicativo com Apache Cordova e assinando para subir na PlayStore
     
 ### Execute seu código usando a flag --release para gerar o apk:
 
-    cordova run android --release
+    cordova build android --release
 
 ### Proximo passo vamos gerar a chave:
 
