@@ -83,20 +83,43 @@ Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para faz
  
     /seu-caminho-para-o-zipalign/zipalign -v 4 /seu-caminho-para-o-apk-nao-assinado/android-release-unsigned.apk /seu-caminho-de-saida-para-o-apk-assinado/appassinado.apk
 
+### Seu apk está pronto para ser colocado na PlayStore
 
 ## Opcional:
 
-### Podemos especificar um build.json com o armazenamento das chaves
+### Podemos especificar um build.json com o armazenamento das chaves para rodar o debug e release mais facilmente
 
 > Alternativamente, você pode especificá-los em um arquivo de configuração de compilação (build.json) Usando o argumento --buildConfig para os mesmos comandos. Aqui está um exemplo de um arquivo de configuração que deve ser adicionado em seu projeto, eu particularmente adicionei dentro da minha pasta js.
 
+```javascript
+{
+    "android": {
+        "debug": {
+            "keystore": "../../appassinado.keystore",
+            "storePassword": "123456789",
+            "alias": "appassinado",
+            "password": "123456789",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "../../appassinado.keystore",
+            "storePassword": "123456789",
+            "alias": "appassinado",
+            "password": "123456789",
+            "keystoreType": ""
+        }
+    }
+}
 
+```
+### Execute o comando para ler a configuração:
 
+    cordova build android --release --buildConfig
+
+Para mais informações de como configurar a assinatura do app [Assinando um aplicativo](http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#signing-an-app)
 
 
 ## Mais Informações
-
-Para mais informações de como configurar a assinatura do app [Assinando um aplicativo](http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#signing-an-app)
 
 Para mais informações de como configurar o Apache Cordova acesse a documentação [Documentação Apache Cordova](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
 
