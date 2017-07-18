@@ -3,7 +3,7 @@ Criando um aplicativo com Apache Cordova e assinando para subir na PlayStore
 
 ## Como utilizar
 
-Crie um novo projeto Cordova:
+###Crie um novo projeto Cordova:
 
      cordova create appassinado br.com.appassinado AppAssinado
     
