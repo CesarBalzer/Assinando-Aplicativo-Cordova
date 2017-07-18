@@ -85,6 +85,8 @@ Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para faz
 
 ### Seu apk está pronto para ser colocado na PlayStore
 
+---
+
 ## Opcional:
 
 ### Podemos especificar um build.json com o armazenamento das chaves para rodar o debug e release mais facilmente
