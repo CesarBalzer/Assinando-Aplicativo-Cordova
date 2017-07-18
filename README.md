@@ -39,6 +39,32 @@ Tutorial de criação e asssinatura de um aplicativo com Apache Cordova para sub
     What is the name of your State or Province? :  xxxxx
     What is the two-letter country code for this unit? :  xxx
 
+### Exemplo da saída quando gerada a chave
+
+    Informe a senha da área de armazenamento de chaves: xxxxxxxxx 
+    Informe novamente a nova senha: xxxxxxxxx
+    Qual é o seu nome e o seu sobrenome?
+      [Unknown]:  App Assinado
+    Qual é o nome da sua unidade organizacional?
+      [Unknown]:  App Assinado
+    Qual é o nome da sua empresa?
+      [Unknown]:  App Assinado
+    Qual é o nome da sua Cidade ou Localidade?
+      [Unknown]:  Ponta Grossa
+    Qual é o nome do seu Estado ou Município?
+      [Unknown]:  Parana
+    Quais são as duas letras do código do país desta unidade?
+      [Unknown]:  BR
+    CN=App Assinado, OU=App Assinado, O=App Assinado, L=Pont Grossa, ST=Parana, C=BR Está correto?
+    [não]:  sim
+
+    Gerando o par de chaves RSA de 2.048 bit e o certificado autoassinado (SHA256withRSA) com uma validade de 10.000 dias
+	para: CN=App Assinado, OU=App Assinado, O=App Assinado, L=Ponta Grossa, ST=Parana, C=BR
+    Informar a senha da chave de <appassinado>
+	(RETURN se for igual à senha da área do armazenamento de chaves):  xxxxxxxxx
+    Informe novamente a nova senha: xxxxxxxxx
+    [Armazenando appassinado.keystore]
+
 ### Depois de gerada a chave, vamos assinar o apk com a ferramenta jarsigner utilizando esta chave:
 
 #### Sintaxe padrão:
